@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: URL('Poppins-Medium.ttf') format('truetype');
+}
+
+:root {
+    --voiceoff: #B6024E;
+    --voiceon: #6e1b3e;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #393939;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B6024E;
+}
+
+
+
+
+body {
+    background-color: transparent;
+    transition: 0.5s;
+    overflow: hidden;
+    user-select: none;
+}
+
+.hud {
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+.hud-square {
+    width: 48px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 7px;
+    border-radius: 11px;
+    background-color: rgba(0, 0, 0, 0.73);
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.hud-filler {
+
+    width: 48px;
+    background-color: #B6024E;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+
+    bottom: 0;
+
+}
+
+
+
+.icon {
+    margin-top: 11px;
+    margin-left: 8px;
+    transform: rotate(180deg);
+}
+
+.settings {
+    display: none;
+}
+
+.settings-container {
+    width: 850px;
+    height: 753px;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#settings-h1 {
+    font-size: 25px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Poppins-Medium';
+    margin-right: 500px;
+    margin-top: 20px;
+}
+
+
+.pink-dot {
+    width: 21px;
+    height: 21px;
+    border-radius: 50px;
+    background: #B6024E;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.all-sets {
+    overflow: auto !important;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 755px;
+    height: 680px;
+    position: absolute
+}
+
+#text1 {
+    font-size: 20px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Poppins-Medium';
+    margin-right: 500px;
+    margin-top: -25px;
+    margin-left: 35px;
+}
+
+.setting-bg {
+    width: 664px;
+    height: 55px;
+    background: rgba(57, 57, 57, 0.54);
+    border-radius: 8px;
+    margin-top: -37px;
+    margin-left: 35px;
+}
+
+#text2 {
+    position: absolute;
+    margin-top: 11.5px;
+    font-size: 20px;
+    margin-left: 12px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Poppins-Medium';
+
+}
+
+#showButton {
+    transition: 1s;
+    position: absolute;
+    background-color: transparent;
+    width: 120px;
+    height: 33px;
+    border-radius: 8px;
+    border: 1.5px solid #B6024E;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 11.5px;
+    font-family: 'Poppins-Medium';
+    margin-left: 525px;
+}
+
+#showButton:hover {
+    background-color: #B6024E;
+}
+
+
+.belts {
+    width: 48px;
+    height: 50px;
+    margin-left: 252px;
+    border-radius: 11px;
+
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+
+.fuel {
+    width: 48px;
+    height: 50px;
+    margin-left: 252px;
+    border-radius: 11px;
+
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+
+.belts-filler {
+    transition: 0.2s;
+    position: absolute;
+    width: 48px;
+    height: 0%;
+    background-color: #B6024E;
+    border-radius: 11px;
+    border-radius: 11px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.belt-icon {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+
+.fuel-filler {
+    position: absolute;
+    width: 48px;
+    height: 50%;
+    background-color: #B6024E;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+
+
+.fuel-icon {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    margin-left: 12px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+
+.mph-p {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.7px black;
+}
+
+
+.gear-p {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-left: -2px;
+    margin-top: 1px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+
+.gear {
+    width: 48px;
+    height: 50px;
+    margin-left: 252px;
+    border-radius: 11px;
+
+    background-color: #B6024E;
+}
+
+
+
+.speed-p {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px black;
+}
+
+
+
+
+.region-container {
+    transition: 1s;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+    min-width: 0px;
+}
+
+.pinker-dot {
+    width: 19px;
+    height: 19px;
+    background-color: #B6024E;
+    border-radius: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.imgu {
+    position: absolute;
+    margin-top: 2px;
+}
+
+
+.car-regions {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    -webkit-text-stroke: 0.2px black;
+    color: white;
+    margin-top: -22.5px;
+    margin-left: 35px;
+    margin-right: 13px;
+}
+
+
+#regionek {
+    color: #B4FFA8;
+}
+
+
+
+.street-container {
+    transition: 1s;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+    min-width: 0px;
+}
+
+
+.car-streets {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    -webkit-text-stroke: 0.2px black;
+    color: white;
+    margin-top: -22.5px;
+    margin-left: 35px;
+    margin-right: 13px;
+}
+
+
+.distance-container {
+    transition: 1s;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+    min-width: 0px;
+}
+
+.car-distance {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    -webkit-text-stroke: 0.2px black;
+    color: white;
+    margin-top: -23.6px;
+    margin-left: 35px;
+    margin-right: 13px;
+}
+
+
+.map-border {
+    position: absolute;
+    width: 315px;
+    margin-left: 25px;
+    height: 200px;
+    border-radius: 10px;
+    border: 4px solid #B6024E;
+    margin-bottom: 65px;
+}
